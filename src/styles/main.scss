@@ -1,18 +1,67 @@
-$bg: #eee;
+$text: #27300f;
+$orange: #d26a22;
+$white: #fff;
 
-.box {
-    background-color: $bg;
-    &__title {
-        color: #f00;
+.header {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__nav {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding-left: 0;
+        gap: 48px;
     }
-    &__image {
-        max-width: 200px;
-    }
-    &__svg {
-        fill: blueviolet;
-        max-width: 500px;
+    &__link {
+        font-size: 16px;
+        color: $text;
+        text-decoration: none;
         &:hover {
-            fill: gold;
+            color: $orange;
         }
     }
+    &__tel {
+        font-size: 16px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        color: $text;
+        text-decoration: none;
+        &:hover {
+            color: $orange;
+        }
+    }
+    &__cart {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        background-color: $orange;
+        background-image: url(../images/cart.svg);
+        background-repeat: no-repeat;
+        background-size: 17px 15px;
+        background-position: center center;
+        text-decoration: none;
+        position: relative;
+    }
+    &__counter {
+        font-size: 8px;
+        color: $white;
+        position: absolute;
+        right: 7px;
+        top: 7px;
+    }
+}
+
+.logo {
+    display: block;
+    width: 123px;
+    height: 32px;
+    background-image: url(../images/logo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
