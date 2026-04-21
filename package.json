@@ -1,5 +1,5 @@
 {
-  "name": "module02-shop", 
+  "name": "module02-shop",
   "scripts": {
     "build": "webpack",
     "dev": "webpack serve --env develop"
@@ -16,6 +16,7 @@
     "webpack-dev-server": "^5.2.3"
   },
   "dependencies": {
-    "html-webpack-plugin": "^5.6.6"
+    "html-webpack-plugin": "^5.6.6",
+    "normalize.css": "^8.0.1"
   }
 }
